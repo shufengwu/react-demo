@@ -1,0 +1,73 @@
+.search_bar{
+    width: 500px;
+}
+
+.search_bar>input{
+    height: 40px;
+    width: 480px;
+    margin: 10px 10px 0px 10px;
+    border: 1px solid #999;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.search_bar div{
+    height: 30px;
+    width: 480px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.p_table>div:first-child{
+    width: 480px;
+    box-sizing: border-box;
+    margin: 10px 10px 0px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: gray;
+}
+
+
+
+.tableItemTitle{
+    width: 480px;
+    box-sizing: border-box;
+    margin: 10px 10px 0px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: cadetblue;
+
+}
+
+.tableItem{
+    width: 480px;
+    box-sizing: border-box;
+    margin: 10px 10px 0px 10px;
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.p_table>div:first-child>div:first-child,.tableItem div:first-child{
+    width: 200px;
+    
+}
+
+.p_table>div:first-child>div:last-child,.tableItem div:last-child{
+    width: 280px;
+}
+
