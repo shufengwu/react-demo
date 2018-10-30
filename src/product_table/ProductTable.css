@@ -71,3 +71,11 @@
     width: 280px;
 }
 
+.stock_true{
+    color: #000;
+}
+
+.stock_false{
+    color: #f00;
+}
+
