@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {scaleNames} from './Utils';
 class Temperature extends React.Component {

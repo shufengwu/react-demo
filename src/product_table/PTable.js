@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './ProductTable.css';
 import TableType from './TableType';

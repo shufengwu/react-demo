@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import './App.css';
 import Welcome from './Welcome';
@@ -9,6 +10,8 @@ import FlavorForm from './FlavorForm';
 import Reservation from './Reservation';
 import Calculator from './Calculator';
 import ProductTable from './product_table/ProductTable';
+import ListOfTenThings from './child/ListOfTenThings';
+
 
 function formatDate(date) {
   return date.toLocaleDateString();
@@ -88,6 +91,7 @@ class App extends Component {
         <Reservation></Reservation>
         <Calculator></Calculator>
         <ProductTable></ProductTable>
+        <ListOfTenThings></ListOfTenThings>
       </div>
 
     );

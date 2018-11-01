@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './ProductTable.css';
 class SearchBar extends React.Component{
@@ -16,7 +17,7 @@ class SearchBar extends React.Component{
         this.props.handleStockChange(e.target.checked);
     }
     render(){
-        const checked = this.state.onlyShowStock;
+        //const checked = this.state.onlyShowStock;
         return (
             <div className="search_bar">
                 <input type="text" placeholder="Search..." onChange={this.handleChange}/>

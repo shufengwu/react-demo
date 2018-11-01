@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './ProductTable.css';
 class TableItemTitle extends React.Component{
