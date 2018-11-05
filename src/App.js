@@ -11,6 +11,9 @@ import Reservation from './Reservation';
 import Calculator from './Calculator';
 import ProductTable from './product_table/ProductTable';
 import ListOfTenThings from './child/ListOfTenThings';
+import MyComponent from './proptypes/MyComponent';
+import Greeting from './proptypes/Greeting';
+import CustomTextInput from './refs/CustomTextInput';
 
 
 function formatDate(date) {
@@ -79,6 +82,11 @@ class App extends Component {
         <Welcome name="Sara" />
         <Welcome name="Cahal" />
         <Welcome name="Edite" />
+        {/* PropTypes.string测试 */}
+        {/* <Welcome name={1} /> */}
+        {/* PropTypes isRequired */}
+        {/* <Welcome/> */}
+        
         hahahahahahahaha
         <br></br>
         <h1>{new Date().toLocaleTimeString()}</h1>
@@ -92,6 +100,12 @@ class App extends Component {
         <Calculator></Calculator>
         <ProductTable></ProductTable>
         <ListOfTenThings></ListOfTenThings>
+        <MyComponent>
+          <div>元素1</div>
+          {/* <div>元素2</div> */}
+        </MyComponent>
+        <Greeting></Greeting>
+        <CustomTextInput></CustomTextInput>
       </div>
 
     );
