@@ -14,6 +14,10 @@ import ListOfTenThings from './child/ListOfTenThings';
 import MyComponent from './proptypes/MyComponent';
 import Greeting from './proptypes/Greeting';
 import CustomTextInput from './refs/CustomTextInput';
+import NameFormRef from './refs/NameFormRef';
+import CounterButton from './shouldUpdate/CounterButton';
+import WordAdder from './shouldUpdate/WordAdder';
+import TickTock from './TickTock';
 
 
 function formatDate(date) {
@@ -106,6 +110,10 @@ class App extends Component {
         </MyComponent>
         <Greeting></Greeting>
         <CustomTextInput></CustomTextInput>
+        <NameFormRef></NameFormRef>
+        <CounterButton count='5'></CounterButton>
+        <WordAdder></WordAdder>
+        <TickTock></TickTock>
       </div>
 
     );
