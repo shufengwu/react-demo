@@ -18,6 +18,11 @@ import NameFormRef from './refs/NameFormRef';
 import CounterButton from './shouldUpdate/CounterButton';
 import WordAdder from './shouldUpdate/WordAdder';
 import TickTock from './TickTock';
+import { Toolbar, ThemeContext } from './context/Toolbar';
+import Dynamic from './context/dynamic-context'
+// import CommentList from './hoc/CommentList';
+// import BlogPost from './hoc/BlogPost';
+import {CommentListWithSubscription,BlogPostWithSubscription} from './hoc/Hoc';
 
 
 function formatDate(date) {
@@ -90,7 +95,7 @@ class App extends Component {
         {/* <Welcome name={1} /> */}
         {/* PropTypes isRequired */}
         {/* <Welcome/> */}
-        
+
         hahahahahahahaha
         <br></br>
         <h1>{new Date().toLocaleTimeString()}</h1>
@@ -114,6 +119,16 @@ class App extends Component {
         <CounterButton count='5'></CounterButton>
         <WordAdder></WordAdder>
         <TickTock></TickTock>
+        <ThemeContext.Provider value='https://mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/qq_logo_2x.png'>
+          <Toolbar />
+        </ThemeContext.Provider>
+        <Toolbar />
+        <Dynamic></Dynamic>
+        {/* <CommentList></CommentList>
+        <BlogPost></BlogPost> */}
+        <CommentListWithSubscription></CommentListWithSubscription>
+        <BlogPostWithSubscription></BlogPostWithSubscription>
+
       </div>
 
     );
